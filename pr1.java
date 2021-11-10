@@ -100,10 +100,14 @@ public class pr1 extends Applet{
 			pctmed[1] = mediana(cp[2], cp[0]);
 			pctmed[2] = mediana(cp[0], cp[1]);
 			imgr.setColor(Color.yellow.darker());
-			imgr.fillOval(pctmed[0].x - 3, pctmed[0].y - 3, 3, 3);
-			imgr.fillOval(pctmed[1].x - 3, pctmed[1].y - 3, 3, 3);
-			imgr.fillOval(pctmed[2].x - 3, pctmed[2].y - 3, 3, 3);
-			imgr.setColor(Color.DARK_GRAY);
+			imgr.fillOval(pctmed[0].x - 3, pctmed[0].y - 6, 6, 6);
+			imgr.fillOval(pctmed[1].x - 3, pctmed[1].y - 6, 6, 6);
+			imgr.fillOval(pctmed[2].x - 3, pctmed[2].y - 6, 6, 6);
+			imgr.setColor(Color.black);
+			imgr.drawOval(pctmed[0].x - 3, pctmed[0].y - 6, 6, 6);
+			imgr.drawOval(pctmed[1].x - 3, pctmed[1].y - 6, 6, 6);
+			imgr.drawOval(pctmed[2].x - 3, pctmed[2].y - 6, 6, 6);
+			imgr.setColor(Color.darkGray);
 			imgr.drawLine(cp[0].x, cp[0].y, pctmed[0].x, pctmed[0].y);
 			imgr.drawLine(cp[1].x, cp[1].y, pctmed[1].x, pctmed[1].y);
 			imgr.drawLine(cp[2].x, cp[2].y, pctmed[2].x, pctmed[2].y);
@@ -111,7 +115,7 @@ public class pr1 extends Applet{
 			Point intersectmed = intersmed(cp[0], cp[1], cp[2]);
 			//imgr.setColor(Color.green);
 			imgr.setColor(Color.red);
-			imgr.fillOval(intersectmed.x - 3, intersectmed.y - 3, 3, 3);
+			imgr.fillOval(intersectmed.x - 3, intersectmed.y - 6, 6, 6);
 			imgr.setColor(Color.black);
 			imgr.drawString(lit[3], intersectmed.x + 3, intersectmed.y + 3);
 		}
@@ -120,17 +124,21 @@ public class pr1 extends Applet{
 			pctbis[1] = pctbis(cp[2], cp[0], cp[1]);
 			pctbis[2] = pctbis(cp[1], cp[0], cp[2]);
 			imgr.setColor(Color.yellow.darker());
-			imgr.fillOval(pctbis[0].x - 3, pctbis[0].y - 3, 3, 3);
-			imgr.fillOval(pctbis[1].x - 3, pctbis[1].y - 3, 3, 3);
-			imgr.fillOval(pctbis[2].x - 3, pctbis[2].y - 3, 3, 3);
-			imgr.setColor(Color.DARK_GRAY);
+			imgr.fillOval(pctbis[0].x - 3, pctbis[0].y - 3, 6, 6);
+			imgr.fillOval(pctbis[1].x - 3, pctbis[1].y - 3, 6, 6);
+			imgr.fillOval(pctbis[2].x - 3, pctbis[2].y - 3, 6, 6);
+			imgr.setColor(Color.black);
+			imgr.drawOval(pctbis[0].x - 3, pctbis[0].y - 3, 6, 6);
+			imgr.drawOval(pctbis[1].x - 3, pctbis[1].y - 3, 6, 6);
+			imgr.drawOval(pctbis[2].x - 3, pctbis[2].y - 3, 6, 6);
+			imgr.setColor(Color.darkGray);
 			imgr.drawLine(cp[0].x, cp[0].y, pctbis[0].x, pctbis[0].y);
 			imgr.drawLine(cp[1].x, cp[1].y, pctbis[1].x, pctbis[1].y);
 			imgr.drawLine(cp[2].x, cp[2].y, pctbis[2].x, pctbis[2].y);
 		    Point intersectbis = intersbis(cp[0], cp[1], cp[2]);
 	//		imgr.setColor(Color.green);
 			imgr.setColor(Color.red);
-			imgr.fillOval(intersectbis.x - 3, intersectbis.y - 3, 3, 3);
+			imgr.fillOval(intersectbis.x - 3, intersectbis.y - 6, 6, 6);
 			imgr.setColor(Color.black);
 			imgr.drawString(lit[5], intersectbis.x + 3, intersectbis.y + 3);
 		}
@@ -139,16 +147,20 @@ public class pr1 extends Applet{
 			pctinl[1] = pctinl(cp[1], cp[2], cp[0]);
 			pctinl[2] = pctinl(cp[2], cp[0], cp[1]);
 			imgr.setColor(Color.yellow.darker());
-			imgr.fillOval(pctinl[0].x - 3, pctinl[0].y - 3, 3, 3);
-			imgr.fillOval(pctinl[1].x - 3, pctinl[1].y - 3, 3, 3);
-			imgr.fillOval(pctinl[2].x - 3, pctinl[2].y - 3, 3, 3);
-			imgr.setColor(Color.DARK_GRAY);
+			imgr.fillOval(pctinl[0].x - 3, pctinl[0].y - 6, 6, 6);
+			imgr.fillOval(pctinl[1].x - 3, pctinl[1].y - 6, 6, 6);
+			imgr.fillOval(pctinl[2].x - 3, pctinl[2].y - 6, 6, 6);
+			imgr.setColor(Color.black);
+			imgr.drawOval(pctinl[0].x - 3, pctinl[0].y - 6, 6, 6);
+			imgr.drawOval(pctinl[1].x - 3, pctinl[1].y - 6, 6, 6);
+			imgr.drawOval(pctinl[2].x - 3, pctinl[2].y - 6, 6, 6);
+			imgr.setColor(Color.darkGray);
 			imgr.drawLine(cp[0].x, cp[0].y, pctinl[0].x, pctinl[0].y);
 			imgr.drawLine(cp[1].x, cp[1].y, pctinl[1].x, pctinl[1].y);
 			imgr.drawLine(cp[2].x, cp[2].y, pctinl[2].x, pctinl[2].y);
 			Point intersectinl = intersinl(cp[0], cp[1], cp[2]);
 			imgr.setColor(Color.red);
-			imgr.fillOval(intersectinl.x - 3, intersectinl.y - 3, 3, 3);
+			imgr.fillOval(intersectinl.x - 3, intersectinl.y - 6, 6, 6);
 			imgr.setColor(Color.black);
 			imgr.drawString(lit[4], intersectinl.x + 3, intersectinl.y + 3);
 		}
@@ -166,6 +178,8 @@ public class pr1 extends Applet{
 			for (int i = 0; i < nrpcte; i++) {
 				imgr.setColor(Color.yellow);
 				imgr.fillOval(cp[i].x - 3, cp[i].y - 3, 6, 6);
+				imgr.setColor(Color.black);
+				imgr.drawOval(cp[i].x-3, cp[i].y-3,6,6);
 				imgr.setColor(Color.black);
 				imgr.drawString(lit[i], cp[i].x + 3, cp[i].y + 3);
 			}
